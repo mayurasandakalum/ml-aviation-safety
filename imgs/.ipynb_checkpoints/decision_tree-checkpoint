@@ -1,0 +1,415 @@
+
+digraph G {
+    splines=line;
+    nodesep=0.1;
+    ranksep=.2;
+    rankdir=TD;
+    margin=0.0;
+    graph [label="100th decision tree - Accident data", labelloc=t, fontname="Arial" fontsize=14 fontcolor="#444443"];
+    node [margin="0.03" penwidth="0.5" width=.1, height=.1];
+    edge [arrowsize=.4 penwidth="0.3"]
+
+    node5 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node5_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node4 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node4_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node9 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node9_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node3 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node3_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node1 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node1_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node22 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node22_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node21 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node21_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node19 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node19_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node17 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node17_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node16 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node16_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node30 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node30_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node28 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node28_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node34 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node34_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node33 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node33_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node27 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node27_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node15 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node15_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node14 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node14_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node12 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node12_61766.svg"/></td>
+            </tr>
+            </table>>]
+	node0 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/node0_61766.svg"/></td>
+            </tr>
+            </table>>]
+    node5 -> leaf6 [penwidth=0.3 color="#444443" label=<>]
+	node5 -> leaf7 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf6 -> leaf7 [style=invis]
+            }
+            
+	node4 -> node5 [penwidth=0.3 color="#444443" label=<>]
+	node4 -> leaf8 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                node5 -> leaf8 [style=invis]
+            }
+            
+	node9 -> leaf10 [penwidth=0.3 color="#444443" label=<>]
+	node9 -> leaf11 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf10 -> leaf11 [style=invis]
+            }
+            
+	node3 -> node4 [penwidth=0.3 color="#444443" label=<>]
+	node3 -> node9 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                node4 -> node9 [style=invis]
+            }
+            
+	node1 -> leaf2 [penwidth=0.3 color="#444443" label=<>]
+	node1 -> node3 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf2 -> node3 [style=invis]
+            }
+            
+	node22 -> leaf23 [penwidth=0.3 color="#444443" label=<>]
+	node22 -> leaf24 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf23 -> leaf24 [style=invis]
+            }
+            
+	node21 -> node22 [penwidth=0.3 color="#444443" label=<>]
+	node21 -> leaf25 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                node22 -> leaf25 [style=invis]
+            }
+            
+	node19 -> leaf20 [penwidth=0.3 color="#444443" label=<>]
+	node19 -> node21 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf20 -> node21 [style=invis]
+            }
+            
+	node17 -> leaf18 [penwidth=0.3 color="#444443" label=<>]
+	node17 -> node19 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf18 -> node19 [style=invis]
+            }
+            
+	node16 -> node17 [penwidth=0.3 color="#444443" label=<>]
+	node16 -> leaf26 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                node17 -> leaf26 [style=invis]
+            }
+            
+	node30 -> leaf31 [penwidth=0.3 color="#444443" label=<>]
+	node30 -> leaf32 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf31 -> leaf32 [style=invis]
+            }
+            
+	node28 -> leaf29 [penwidth=0.3 color="#444443" label=<>]
+	node28 -> node30 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf29 -> node30 [style=invis]
+            }
+            
+	node34 -> leaf35 [penwidth=0.3 color="#444443" label=<>]
+	node34 -> leaf36 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf35 -> leaf36 [style=invis]
+            }
+            
+	node33 -> node34 [penwidth=0.3 color="#444443" label=<>]
+	node33 -> leaf37 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                node34 -> leaf37 [style=invis]
+            }
+            
+	node27 -> node28 [penwidth=0.3 color="#444443" label=<>]
+	node27 -> node33 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                node28 -> node33 [style=invis]
+            }
+            
+	node15 -> node16 [penwidth=0.3 color="#444443" label=<>]
+	node15 -> node27 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                node16 -> node27 [style=invis]
+            }
+            
+	node14 -> node15 [penwidth=0.3 color="#444443" label=<>]
+	node14 -> leaf38 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                node15 -> leaf38 [style=invis]
+            }
+            
+	node12 -> leaf13 [penwidth=0.3 color="#444443" label=<>]
+	node12 -> node14 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf13 -> node14 [style=invis]
+            }
+            
+	node0 -> node1 [penwidth=0.3 color="#444443" label=<&le;>]
+	node0 -> node12 [penwidth=0.3 color="#444443" label=<&gt;>]
+	
+            {
+                rank=same;
+                node1 -> node12 [style=invis]
+            }
+            
+    leaf2 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf2_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf6 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf6_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf7 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf7_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf8 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf8_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf10 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf10_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf11 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf11_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf13 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf13_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf18 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf18_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf20 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf20_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf23 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf23_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf24 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf24_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf25 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf25_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf26 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf26_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf29 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf29_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf31 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf31_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf32 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf32_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf35 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf35_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf36 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf36_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf37 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf37_61766.svg"/></td>
+        </tr>
+        </table>>]
+	leaf38 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/leaf38_61766.svg"/></td>
+        </tr>
+        </table>>]
+
+    
+            subgraph cluster_legend {
+                style=invis;
+                legend [penwidth="0" margin="0" shape=box margin="0.03" width=.1, height=.1 label=<
+                
+        <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td border="0" cellspacing="0" cellpadding="0"><img src="/var/folders/t9/ky875kc16nqg6gjchx4hxpz40000gn/T/legend_61766.svg"/></td>
+            </tr>
+        </table>
+        
+                >]
+            }
+            
+    
+}
+    

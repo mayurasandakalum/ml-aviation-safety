@@ -1,0 +1,11 @@
+2021-09-20 18:41:17,345 INFO    MainThread:62329 [internal.py:wandb_internal():86] W&B internal server running at pid: 62329, started at: 2021-09-20 18:41:17.345568
+2021-09-20 18:41:17,346 DEBUG   HandlerThread:62329 [handler.py:handle_request():126] handle_request: check_version
+2021-09-20 18:41:17,347 INFO    WriterThread:62329 [datastore.py:open_for_write():77] open: /Users/robertreynoso/Desktop/phase_03_project/notebooks/wandb/run-20210920_184116-1wxfldbk/run-1wxfldbk.wandb
+2021-09-20 18:41:17,348 DEBUG   SenderThread:62329 [sender.py:send():185] send: header
+2021-09-20 18:41:17,348 DEBUG   SenderThread:62329 [sender.py:send_request():199] send_request: check_version
+2021-09-20 18:41:17,390 DEBUG   SenderThread:62329 [sender.py:send():185] send: run
+2021-09-20 18:41:17,529 INFO    SenderThread:62329 [dir_watcher.py:__init__():169] watching files in: /Users/robertreynoso/Desktop/phase_03_project/notebooks/wandb/run-20210920_184116-1wxfldbk/files
+2021-09-20 18:41:17,529 INFO    SenderThread:62329 [sender.py:_start_run_threads():746] run started: 1wxfldbk with start time 1632188476
+2021-09-20 18:41:17,529 DEBUG   SenderThread:62329 [sender.py:send():185] send: summary
+2021-09-20 18:41:17,530 INFO    SenderThread:62329 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-09-20 18:41:17,533 DEBUG   HandlerThread:62329 [handler.py:handle_request():126] handle_request: run_start

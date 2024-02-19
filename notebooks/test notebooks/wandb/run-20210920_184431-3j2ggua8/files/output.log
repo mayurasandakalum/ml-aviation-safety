@@ -1,0 +1,22 @@
+
+Error in callback <function _WandbInit._pause_backend at 0x7f9cb09769d0> (for post_run_cell):
+    status_response = self._interface.communicate_network_status()
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 749, in communicate_network_status
+    self._target(*self._args, **self._kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 203, in check_status
+    resp = self._communicate(req, timeout=timeout, local=True)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 539, in _communicate
+    status_response = self._interface.communicate_stop_status()
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 737, in communicate_stop_status
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 544, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+    resp = self._communicate(req, timeout=timeout, local=True)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 539, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/opt/anaconda3/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 544, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+Error in callback <function _WandbInit._resume_backend at 0x7f9cb09768b0> (for pre_run_cell):
+Error in callback <function _WandbInit._pause_backend at 0x7f9cb09769d0> (for post_run_cell):
