@@ -1,0 +1,20 @@
+Section 4: Aircraft Details
+
+'make': drop
+'model'drop
+'number_of_engines' number
+'engine_type'drop
+'aircraft_damage'drop
+'amateur_built' drop
+Section 5: Incident Details
+
+'location' drop
+'weather_conditions' drop
+'Year'
+'Month'
+'Day'
+'phase_of_flight' drop
+'injuries' number
+'pax_onboard' number
+'fatality_percentage' number
+'survived' number
