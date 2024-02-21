@@ -15,8 +15,12 @@ with open("model.pkl", 'rb') as file:
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        data = request.form.to_dict()
+        data_dir = request.form.to_dict()
+        data = list(data_dir.values())
+        data = np.array(data).reshape(1, -1)
+        prediction = loaded_model.predict(data)
         print(f"Data: {data}")
+        print(f"Predction: {prediction[0]}")
         return "Data received"
     else:
         return render_template('index.html')

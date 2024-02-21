@@ -1720,6 +1720,38 @@ $(function () {
     // Prevent the form from being submitted the default way
     event.preventDefault();
 
+    let makeValueKey = Object.keys(makeData).find(
+      (key) => makeData[key] === makeValue
+    );
+
+    let modelValueKey = Object.keys(modelData).find(
+      (key) => modelData[key] === modelValue
+    );
+
+    let engineTypeValueKey = Object.keys(engineTypeData).find(
+      (key) => engineTypeData[key] === engineTypeValue
+    );
+
+    let aircraftDamageValueKey = Object.keys(aircraftDamage).find(
+      (key) => aircraftDamage[key] === aircraftDamageValue
+    );
+
+    let amateurBuiltValueKey = Object.keys(amateurBuiltData).find(
+      (key) => amateurBuiltData[key] === amateurBuiltValue
+    );
+
+    let locationValueKey = Object.keys(locationData).find(
+      (key) => locationData[key] === locationValue
+    );
+
+    let weatherValueKey = Object.keys(weatherData).find(
+      (key) => weatherData[key] === weatherValue
+    );
+
+    let flightPaseValueKey = Object.keys(phaseOfFlightData).find(
+      (key) => phaseOfFlightData[key] === flightPaseValue
+    );
+
     numberOfEnginesValue = $("#no-of-engines-input").val();
     yearValue = $("#year-input").val();
     monthValue = $("#month-input").val();
@@ -1728,6 +1760,16 @@ $(function () {
     paxOnbordValue = $("#pax-onboard-input").val();
     fatalityValue = $("#fatality-input").val();
     survivedValue = $("#survived-input").val();
+
+    // console.log(
+    //   makeValueKey,
+    //   modelValueKey,
+    //   engineTypeValueKey,
+    //   aircraftDamageValueKey,
+    //   locationValueKey,
+    //   weatherValueKey,
+    //   flightPaseValueKey
+    // );
 
     // Now you can send this data to your server
     // $.ajax({
@@ -1744,14 +1786,15 @@ $(function () {
     //   },
     // });
     $.post("http://127.0.0.1:5000/", {
-      make: makeValue,
-      model: modelValue,
-      engineType: engineTypeValue,
-      aircraftDamage: aircraftDamageValue,
-      amateurBuilt: amateurBuiltValue,
-      location: locationValue,
-      weather: weatherValue,
-      flightPase: flightPaseValue,
+      make: makeValueKey,
+      model: modelValueKey,
+      engineType: engineTypeValueKey,
+      aircraftDamage: aircraftDamageValueKey,
+      amateurBuilt: amateurBuiltValueKey,
+      location: locationValueKey,
+      weather: weatherValueKey,
+      flightPase: flightPaseValueKey,
+
       numberOfEngines: numberOfEnginesValue,
       year: yearValue,
       month: monthValue,
