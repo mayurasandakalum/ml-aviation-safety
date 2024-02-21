@@ -237,6 +237,9 @@ p {
   background: #fff;
   z-index: 9;
   border: 1px solid #81acee;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .select .dropdown li {
   padding: 5px 10px;

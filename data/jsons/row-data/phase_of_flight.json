@@ -1,1 +1,14 @@
-{"0": "APPROACH", "1": "CLIMB", "2": "CRUISE", "3": "DESCENT", "4": "GO-AROUND", "5": "LANDING", "6": "MANEUVERING", "7": "OTHER", "8": "STANDING", "9": "TAKEOFF", "10": "TAXI", "11": "UNKNOWN"}
+{
+  "0": "APPROACH",
+  "1": "CLIMB",
+  "2": "CRUISE",
+  "3": "DESCENT",
+  "4": "GO-AROUND",
+  "5": "LANDING",
+  "6": "MANEUVERING",
+  "7": "OTHER",
+  "8": "STANDING",
+  "9": "TAKEOFF",
+  "10": "TAXI",
+  "11": "UNKNOWN"
+}
