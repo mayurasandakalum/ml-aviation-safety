@@ -15,8 +15,9 @@ with open("model.pkl", 'rb') as file:
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        data = request.form
-        print(data)
+        data = request.form.to_dict()
+        print(f"Data: {data}")
+        return "Data received"
     else:
         return render_template('index.html')
 

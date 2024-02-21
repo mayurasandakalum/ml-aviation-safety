@@ -1666,8 +1666,102 @@ $(function () {
     var text = $(this).attr("rel");
     $(this).parent().prev().find("div").text(text);
   });
+
+  let makeValue = "";
+  let modelValue = "";
+  let numberOfEnginesValue = "";
+  let engineTypeValue = "";
+  let aircraftDamageValue = "";
+  let amateurBuiltValue = "";
+  let locationValue = "";
+  let weatherValue = "";
+  let yearValue = "";
+  let monthValue = "";
+  let dayValue = "";
+  let flightPaseValue = "";
+  let injuriesValue = "";
+  let paxOnbordValue = "";
+  let fatalityValue = "";
+  let survivedValue = "";
+
   $("#make-dropdown li").click(function () {
-    let selectedValue = $(this).text();
-    console.log(selectedValue);
+    makeValue = $(this).text();
+  });
+
+  $("#model-dropdown li").click(function () {
+    modelValue = $(this).text();
+  });
+
+  $("#engine-type-dropdown li").click(function () {
+    engineTypeValue = $(this).text();
+  });
+
+  $("#aircraft-damage-dropdown li").click(function () {
+    aircraftDamageValue = $(this).text();
+  });
+
+  $("#amateur-built-dropdown li").click(function () {
+    amateurBuiltValue = $(this).text();
+  });
+
+  $("#location-dropdown li").click(function () {
+    locationValue = $(this).text();
+  });
+
+  $("#weather-dropdown li").click(function () {
+    weatherValue = $(this).text();
+  });
+
+  $("#flight-pase-dropdown li").click(function () {
+    flightPaseValue = $(this).text();
+  });
+
+  $("#submit-button").click(function (event) {
+    // Prevent the form from being submitted the default way
+    event.preventDefault();
+
+    console.log(
+      makeValue,
+      "/ ",
+      modelValue,
+      "/ ",
+      engineTypeValue,
+      "/ ",
+      aircraftDamageValue,
+      "/ ",
+      amateurBuiltValue,
+      "/ ",
+      locationValue,
+      "/ ",
+      weatherValue,
+      "/ ",
+      flightPaseValue
+    );
+
+    // Now you can send this data to your server
+    // $.ajax({
+    //   url: "http://127.0.0.1:5000/",
+    //   type: "POST",
+    //   data: {
+    //     make: make,
+    //     model: model,
+    //     engineType: engineType,
+    //   },
+    //   success: function (response) {
+    //     // This function will be called when the server responds successfully
+    //     console.log(response);
+    //   },
+    // });
+    $.post("http://127.0.0.1:5000/", {
+      make: makeValue,
+      model: modelValue,
+      numberOfEngines: numberOfEnginesValue,
+      engineType: engineTypeValue,
+      aircraftDamage: aircraftDamageValue,
+      amateurBuilt: amateurBuiltValue,
+      location: locationValue,
+      weather: weatherValue,
+      flightPase: flightPaseValue,
+    });
   });
 });
