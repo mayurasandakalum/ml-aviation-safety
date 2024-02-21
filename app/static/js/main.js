@@ -1720,23 +1720,14 @@ $(function () {
     // Prevent the form from being submitted the default way
     event.preventDefault();
 
-    console.log(
-      makeValue,
-      "/ ",
-      modelValue,
-      "/ ",
-      engineTypeValue,
-      "/ ",
-      aircraftDamageValue,
-      "/ ",
-      amateurBuiltValue,
-      "/ ",
-      locationValue,
-      "/ ",
-      weatherValue,
-      "/ ",
-      flightPaseValue
-    );
+    numberOfEnginesValue = $("#no-of-engines-input").val();
+    yearValue = $("#year-input").val();
+    monthValue = $("#month-input").val();
+    dayValue = $("#day-input").val();
+    injuriesValue = $("#injuries-input").val();
+    paxOnbordValue = $("#pax-onboard-input").val();
+    fatalityValue = $("#fatality-input").val();
+    survivedValue = $("#survived-input").val();
 
     // Now you can send this data to your server
     // $.ajax({
@@ -1755,13 +1746,20 @@ $(function () {
     $.post("http://127.0.0.1:5000/", {
       make: makeValue,
       model: modelValue,
-      numberOfEngines: numberOfEnginesValue,
       engineType: engineTypeValue,
       aircraftDamage: aircraftDamageValue,
       amateurBuilt: amateurBuiltValue,
       location: locationValue,
       weather: weatherValue,
       flightPase: flightPaseValue,
+      numberOfEngines: numberOfEnginesValue,
+      year: yearValue,
+      month: monthValue,
+      day: dayValue,
+      injuries: injuriesValue,
+      paxOnbord: paxOnbordValue,
+      fatality: fatalityValue,
+      survived: survivedValue,
     });
   });
 });
