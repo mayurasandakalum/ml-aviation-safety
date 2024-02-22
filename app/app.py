@@ -21,14 +21,14 @@ def index():
         prediction = loaded_model.predict(data)
 
         if prediction == 1:
-            prediction = "yes"
+            prediction = "Fatal"
         else:
-            prediction = "no"
+            prediction = "Non-Fatal"
 
         print(f"Data: {data}")
         print(f"Predction: {prediction}")
 
-        return jsonify({prediction: prediction})
+        return jsonify({"prediction": prediction})
     else:
         return render_template('index.html')
 

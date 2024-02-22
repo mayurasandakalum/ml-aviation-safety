@@ -1770,7 +1770,6 @@ $(function () {
     paxOnbordValue = $("#pax-onboard-input").val();
     fatalityValue = $("#fatality-input").val();
     survivedValue = $("#survived-input").val();
-
     $.post("http://127.0.0.1:5000/", {
       make: makeValueKey,
       model: modelValueKey,
@@ -1791,6 +1790,9 @@ $(function () {
       survived: survivedValue,
     }).done(function (response) {
       console.log("Server response: ", response);
+
+      $("#prediction").text(response["prediction"]);
+      $("#wizard").steps("next");
     });
   });
 });
