@@ -11,9 +11,9 @@
       rel="stylesheet"
       href="static/fonts/material-design-iconic-font/css/material-design-iconic-font.css"
     />
-
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="static/css/style.css" />
+    <style></style>
   </head>
   <body>
     <div class="wrapper">
@@ -25,7 +25,7 @@
             <div class="image-holder">
               <img src="static/images/form-wizard-1.jpg" alt="" />
             </div>
-            <div class="form-content">
+            <div class="form-content" style="position: relative">
               <div class="form-header">
                 <h3>Aircraft Details</h3>
               </div>
@@ -89,6 +89,16 @@
                   </ul>
                 </div>
               </div>
+              <div style="position: absolute; bottom: 50px; right: 50px">
+                <button
+                  type="button"
+                  class="button-6"
+                  role="button"
+                  id="section-1-next"
+                >
+                  Next
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -100,7 +110,7 @@
             <div class="image-holder">
               <img src="static/images/form-wizard-2.jpg" alt="" />
             </div>
-            <div class="form-content">
+            <div class="form-content" style="position: relative">
               <div class="form-header">
                 <h3>Incident Details</h3>
               </div>
@@ -202,7 +212,25 @@
                   />
                 </div>
               </div>
-              <button type="submit" id="submit-button">Submit</button>
+              <div style="position: absolute; bottom: 50px; right: 50px">
+                <button
+                  class="button-6"
+                  role="button"
+                  style="background: #6d7f52; color: #fff"
+                  id="section-2-back"
+                >
+                  Back
+                </button>
+                <button
+                  type="button"
+                  class="button-6"
+                  role="button"
+                  id="section-2-predict"
+                >
+                  Predict
+                </button>
+              </div>
+              <!-- <button type="submit" id="submit-button">Submit</button> -->
             </div>
           </div>
         </section>

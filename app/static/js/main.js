@@ -1632,6 +1632,7 @@ $(function () {
     transitionEffect: "fade",
     enableAllSteps: true,
     transitionEffectSpeed: 500,
+    enablePagination: false,
     labels: {
       finish: "Submit",
       next: "Next",
@@ -1716,7 +1717,16 @@ $(function () {
     flightPaseValue = $(this).text();
   });
 
-  $("#submit-button").click(function (event) {
+  $("#section-1-next").click(function () {
+    $("#wizard").steps("next");
+  });
+
+  $("#section-2-back").click(function () {
+    $("#wizard").steps("previous");
+  });
+
+  $("#section-2-predict").click(function (event) {
+    // $("#wizard").steps("next");
     // Prevent the form from being submitted the default way
     event.preventDefault();
 
@@ -1761,30 +1771,6 @@ $(function () {
     fatalityValue = $("#fatality-input").val();
     survivedValue = $("#survived-input").val();
 
-    // console.log(
-    //   makeValueKey,
-    //   modelValueKey,
-    //   engineTypeValueKey,
-    //   aircraftDamageValueKey,
-    //   locationValueKey,
-    //   weatherValueKey,
-    //   flightPaseValueKey
-    // );
-
-    // Now you can send this data to your server
-    // $.ajax({
-    //   url: "http://127.0.0.1:5000/",
-    //   type: "POST",
-    //   data: {
-    //     make: make,
-    //     model: model,
-    //     engineType: engineType,
-    //   },
-    //   success: function (response) {
-    //     // This function will be called when the server responds successfully
-    //     console.log(response);
-    //   },
-    // });
     $.post("http://127.0.0.1:5000/", {
       make: makeValueKey,
       model: modelValueKey,
@@ -1803,6 +1789,8 @@ $(function () {
       paxOnbord: paxOnbordValue,
       fatality: fatalityValue,
       survived: survivedValue,
+    }).done(function (response) {
+      console.log("Server response: ", response);
     });
   });
 });
