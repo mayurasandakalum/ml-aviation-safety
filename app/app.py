@@ -2,7 +2,7 @@ import pickle
 import os
 import numpy as np
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
@@ -19,9 +19,16 @@ def index():
         data = list(data_dir.values())
         data = np.array(data).reshape(1, -1)
         prediction = loaded_model.predict(data)
+
+        if prediction == 1:
+            prediction = "yes"
+        else:
+            prediction = "no"
+
         print(f"Data: {data}")
-        print(f"Predction: {prediction[0]}")
-        return "Data received"
+        print(f"Predction: {prediction}")
+
+        return jsonify({prediction: prediction})
     else:
         return render_template('index.html')
 
